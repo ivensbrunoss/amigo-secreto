@@ -9,11 +9,9 @@ function adicionar() {
         return;
     }
 
-    for (let i = 0; i < amigos.length; i++) {
-        if (amigo.value == amigos[i]) {
-            alert("Nome já se encontra na lista")
-            return;
-        }
+    if (amigo.includes(amigo.value)) {
+        alert("Nome já se encontra na lista")
+        return;
     }
 
     if (listaAmigos.textContent == "") {
